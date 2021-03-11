@@ -1,0 +1,22 @@
+##OpenGL GLIB
+Ortho -5. 5.   -5. 5.
+LookAt 0 0 2  0 0 0  0 1 0
+
+Texture2D 5 ConcreteTest.bmp
+
+Vertex   magic.vert
+Fragment magic.frag
+Program  Magic					\
+    uSc	 <0. .5 1.>				\
+	uTc	 <0. .66 1.>				\
+	uDs      <0.01 .4 .5>		\
+	uDt      <0.01 .5 .5>		\
+    uUseCircle <0. 0. 1.>       \
+    uUseTaper <0. 1. 1.>        \
+    uRadius     <0. 0.1 .5>     \
+    uNoiseFreq <0. 3.86 10.>       \
+    uNoiseAmp <0. .0096 .5>       \
+    uDistortionSpeed <0. 36. 100.>    \
+	uImageUnit  5
+
+QuadXY .2 5.
